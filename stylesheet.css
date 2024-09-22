@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+:root {
+--Top-bar-text-color: #33354d;
+--background-color: #fff;
+--primary-text-color:#0B0F19;
+--secondary-text-color: #565973;
+--third-text-color: #9397AD;
+--gradient-color: radial-gradient(120.91% 118.4% at 50% 100%, rgba(99, 102, 241, 0.10) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+--primary-button-color: #6366F1;
+}
+
+}
+
+body {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        background color: var(--background-color);
+        
+
+       
+
+        
+}
+
+/* Header */
+.header {
+    width: 120;
+    height: 54,75rem;
+    flex-shrink: 0;
+    background: var(--gradient-color)
+
+}
+
+/* .topbar{
+    display:flex;
+    gap: 5rem;
+    flex-direction:row
+    align-items:center
+    width: 120rem;
+    height:54.75rem;
+    color:
+   font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160% 
+    color:#33354D;
+
+    .dark-mode{
+        color: #565973;
+
+
+    }
+} */
+
+#header{
+display:grid;
+grid-template-columns: 1fr 1 fr;
+align-items: center;
+padding: 10px;
+}
+
+.topbar {
+  display:contents;
+
+}
+
+.topbar a {
+  text-decoration: none;
+}
+.topbar img {
+  margin-right: 20px;
+
+}
+
+.dark-mode,
+btn-1 {
+  margin-left: 20px;
+
+}
+
+.switch {
+  display: inline-block;
+
+}
+/* /* .topbar {
+    display: flex; /* Flexbox för att placera element i rad */
+    /* align-items: center; /* Centrera vertikalt */
+    /* justify-content: space-between; Fördela utrymme mellan element */
+    /* padding: 10px 20px; Lite padding runt */
+    /* background-color: transparent; Bakgrundsfärg */
+    /* position: fixed; Fixerar navbaren högst upp */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* height: 60px; Fixerad höjd */
+    /* z-index: 1000; Högre lager så den ligger över annat innehåll */ */
+}
+/* Logotypers styling */
+/* .topbar img { */
+    /* height: 40px; Justera storlek på logotyper */
+    /* margin-right: 20px; Liten marginal mellan logotyperna */
+}
+
+/* Länkar (Features och Dark mode) */
+/* .topbar a { */
+    /* margin-right: 15px; Marginal mellan länkarna */
+    /* text-decoration: none; Ingen understrykning */
+    /* color: var(--Top-bar-text-color); */
+    
+    /* font-size: 16px; */ */
+} */
+
+button {
+    cursor: pointer;
+    
+
+}
+
+/* Sign-in/up button */
+.btn-1 {
+    display:inline-flex;
+    padding: 0.5625em 1.25em;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 0.25em;
+    border-color: #6366F1;
+    background: #6366F1;
+    color: #fff;  
+    text-align:center;  
+    font-size: 0.875rem;
+    font-style:normal;
+    font-weight: 600;
+    line-height: 1.125rem;
+
+
+}
+
+.btn-1:hover {
+    color: #4648a8 /* Ändrar färg vid hover */
+}
+
+/* Slider kodad med hjälp av google */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #6366F1;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6366F1;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* Hero section layout */
+.hero{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+
+}
+
+.hero-text {
+  max width: 50%;
+
+}
+
+.hero-text h1 {
+  font-feature-settings: 'liga' off, 'clig' off;
+  width: 32.875rem;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+  margin-bottom: 20px;
+}
+
+.hero.text p {
+    width: 32.875rem;    
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+}
+
+.download-buttons {
+  display:flex;
+  gap: 15px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+
+}
+
+.download-buttons img {
+  width: 11.25rem;
+  height: 3.25rem;
+}
+
+
+
+.download-buttons .btn-appstore,
+.download-buttons .btn-playstore {
+    border:none
+  
+  }
+
+ 
+  /* .discover-more {
+display:grid;
+grid:contents; */
+
+
+
+ .arrow-button {
+  width:44px;
+  height: 44px;
+  border:none;
+  padding: 10px;
+  border-radius: 40px;
+  background: #926868;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  display:inline-block;
+  margin: 4px 2px;
+  align-items:flex-start
+  display:
+
+
+ }
+  /* Nedåt pil skapad med hjälp av google */
+.arrow-down{
+  border:solid black;
+  border-width: 0 3px 3px 0;
+  display:inline-block;
+  padding:3px;
+  transform: rotate(45deg);
+  -webkit-transform:rotate(45deg);
+}
+
+.discover-more p {
+  color:var(--secondary-text-color)
+  text-align: center;
+  font-feature-settings: 'liga' off, 'clig' off;
+  
+
+}
+
+
+/* Bild i hero section layout */
+
+.hero-image {
+    max-width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Media query hero section */
+
+@media (max-width:768px) {
+.hero {
+  flex-direction:column;
+  text-align: center;
+  padding: 50px 20px;
+
+}
+
+}
+
+.hero-text, .hero-image {
+max-width: 100%;
+
+}
+.hero-image{
+  margin-top: 30px
+} 

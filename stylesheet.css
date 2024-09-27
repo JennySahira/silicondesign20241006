@@ -18,22 +18,17 @@
 body {
         font-family: "Manrope", sans-serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
+        font-style:normal;
         background color: var(--background-color);
-        
-
-       
-
-        
+    
 }
 
-/* Header */
-.header {
-    width: 120;
-    height: 54,75rem;
-    flex-shrink: 0;
-    background: var(--gradient-color)
+/* Topbar */
+/* .flex-container {
+    /* width: 120; */
+    /* height: 10rem; */
+    /* flex-shrink: 0;
+    background: var(--gradient-color) */ */
 
 }
 
@@ -58,15 +53,26 @@ body {
     }
 } */
 
-#header{
-display:grid;
-grid-template-columns: 1fr 1 fr;
-align-items: center;
+/* .flex-container{
+display:flex;
 padding: 10px;
+} */
+
+.container-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items:;
+  height:4.75rem;
+
+
 }
 
-.topbar {
-  display:contents;
+.container-right {
+  display:flex;
+  justify-content: flex-end;
+  align-items:;
+  height:4.75rem;
+  flex-shrink: 10;
 
 }
 
@@ -74,7 +80,7 @@ padding: 10px;
   text-decoration: none;
 }
 .topbar img {
-  margin-right: 20px;
+  margin-right: 1rem;
 
 }
 
@@ -124,8 +130,11 @@ button {
 
 /* Sign-in/up button */
 .btn-1 {
-    display:inline-flex;
-    padding: 0.5625em 1.25em;
+    border:none;
+    padding: 0.3rem 1rem;
+
+    /* display:inline-flex;
+    padding: 0.5625rem 1.25rem;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
@@ -136,16 +145,24 @@ button {
     text-align:center;  
     font-size: 0.875rem;
     font-style:normal;
-    font-weight: 600;
-    line-height: 1.125rem;
+    font-weight: 100;
+    line-height: 0.5rem; */
+
 
 
 }
 
 .btn-1:hover {
     color: #4648a8 /* Ändrar färg vid hover */
+
 }
 
+.btn-1 img {
+  width: 16px;
+  height:auto;
+  margin-right: 0,5rem;
+
+}
 /* Slider kodad med hjälp av google */
 .switch {
     position: relative;
@@ -274,22 +291,26 @@ button {
 display:grid;
 grid:contents; */
 
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
  .arrow-button {
   width:44px;
   height: 44px;
   border:none;
   padding: 10px;
-  border-radius: 40px;
-  background: #926868;
+  border-radius: 50%;
+  background: #976e6e;
   box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-  display:inline-block;
+  display:flex;
   margin: 4px 2px;
-  align-items:flex-start
-  display:
-
-
+  align-items:center
+  position: relative;
+ 
  }
   /* Nedåt pil skapad med hjälp av google */
 .arrow-down{
@@ -301,6 +322,20 @@ grid:contents; */
   -webkit-transform:rotate(45deg);
 }
 
+.arrow.down::before {
+  content: '';
+  display: block;
+  width:0;
+  height:0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}
+
+arrow.down:hover {
+  background-color: #ccc;
+
+}
 .discover-more p {
   color:var(--secondary-text-color)
   text-align: center;
@@ -314,6 +349,8 @@ grid:contents; */
 
 .hero-image {
     max-width: 40%;
+    padding-right: 2;
+
 }
 
 .hero-image img {
@@ -342,3 +379,8 @@ max-width: 100%;
 .hero-image{
   margin-top: 30px
 } 
+
+
+
+
+

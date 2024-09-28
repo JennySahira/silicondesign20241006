@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämningsuppgift Jenny Celic 2024</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="mediaquery" href="/mediaquery.css"
+    <link rel="stylesheet" href="card-1.css">
+    <link rel="stylesheet" href="card-2.css">
+    <link rel="stylesheet" href="card-3.css">
+    <link rel="stylesheet" href="card-4.css">
+    <link rel="stylesheet" href="/mediaquery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
   
    
@@ -27,7 +32,7 @@
             <div class="right-section">
                 <a class="dark-mode">Dark Mode</a>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="dark-mode">
                     <span class="slider round"></span>
                 </label>
                 <button class="btn-1">
@@ -91,11 +96,12 @@
 
         <div class="headline">
             <h1>App features</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iusto optio eius cum? Earum blanditiis labore eaque ut expedita error quam debitis in. Accusamus, doloribus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
          </div>  
          
-         </div>
-         <div class="usp">
+    
+    <div class="usp-1">
+         <div class="usp-2">
             <div class=usp-item1>
                     <h2>Easy Payments</h2>
                         <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
@@ -129,10 +135,72 @@
         <img src="/Images/Card 2/security.svg" class="security" alt="card">
         <img src="/Images/Card 2/support.svg" class="support" alt="card">
         <img src="/Images/Card 2/smiley.svg" class="smiley" alt="card">
+    
     </div>
-     
+    </div>
     </div>
     </div>   
+
+
+<!-- Card 3 -->
+<div class="card3-background">
+<div class="card-3">
+    <h1 class="rubrik">How Does It Work?</h1>
+    <div class="carousel-container">
+    <div class="carousel">
+            <div class="carousel-images">
+            <img src="/Images/Card 3/iPhone-1.svg" alt="Iphone with transactions">
+            <img src="/Images/Card 3/iPhone-2.svg" alt="Iphone displaying transfers">
+            <img src="/Images/Card 3/Iphone-3.svg" alt="Ihpone showing budget">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>  
+
+<div class="transfer-text">
+        <h4>Latest transaction history</h4>
+        <p>Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique<br> quisque hac in consectetur condimentum.</br></p>
+    </div>
+</div>
+</div>
+
+
+<!-- Card 4 -->
+<div class="card4-background">
+<div class="card-4">
+    <div class="top-text">
+        <h2 class="h2-top">Make your money transfer simple and clear</h2>
+    <div class="checklist">
+        <ul>
+            <li>Banking transactions are free for you</li>
+            <li>No monthly cash commission</li>
+            <li>Manage payments and transactions online</li>
+        </ul>
+    </div>
+        <button class=" learn-more learn-more1">Learn more<img src="/Images/Card 4/Vector.svg" alt="arrow on button"></button>
+    </div>
+    <div class="top-image">
+        <img src="/Images/Card 4/top-image.svg" alt="transaction forecast">
+    </div>
+
+<div class="bottom-image">
+    <img src="/Images/Card 4/bottom-image.svg" alt="transaction contacts">
+</div>
+
+<div class="bottom-card">
+<div class="bottom-text">
+    <h2 id=h2 class="h2-bottom">Receive payment from <br>international bank details</br></h2>
+    <img src="/Images/Card 4/wallet.svg" alt="wallet" class="wallet2">
+    <img src="/Images/Card 4/creditcard.svg" alt="creditcard" class="creditcard">
+    <p class="text1">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+    <p class="text2">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+    <button class=" learn-more learn-more2">Learn more<img src="/Images/Card 4/Vector.svg" alt="arrow on button"></button>
+</div>
+</div>
+</div>
+</div>
+<script src="/carousel.js"></script>
     </body>
 
 </html>

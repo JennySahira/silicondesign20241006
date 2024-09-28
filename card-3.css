@@ -1,0 +1,81 @@
+.card3-background {
+    background:#F3F6FF;
+}
+
+
+.card-3 {
+    padding: 2rem;
+    margin: auto;
+    max-width: 100%;
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.rubrik {
+    grid-column:2;
+    grid-row: 1;
+    width: 100;
+    max width: none;
+    text-align: center;
+}
+
+.carousel-container   {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+.transfer-text {
+    grid-column: 1 /span 3;
+    grid-row: 3;
+    width: 100%
+    max-width: none;
+    text-align:center;
+
+}
+
+/* Carousel skapad med hjälp av chatgpt - se javascript*/
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 37rem; /* Maxbredd för karusellen */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; 
+}
+
+.carousel-images img.active {
+    display: block; 
+}
+
+button.prev, button.next {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7e0505fa;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+    display:block !important;
+}
+
+button.prev {
+    left: -50px;
+}
+
+button.next {
+    right:-50px;
+}
+
+

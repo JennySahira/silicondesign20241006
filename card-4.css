@@ -1,0 +1,176 @@
+.card4-background {
+    background-color:#FFF;
+
+}
+
+
+.card-4 {
+    padding: 2rem;
+    margin: auto;
+    max-width: 100%;
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+
+}
+
+/* Grid card 4 */
+
+.top-text {
+    grid-column: 1;
+    grid-row: 1;
+    width: 65%;
+    padding-top: 6rem;
+}
+
+.top-image {
+    grid-column: 2;
+    grid-row: 1;
+    width:70%;
+    height:auto;
+}
+
+.bottom-card {
+    grid-column: 2;
+    grid-row:2;
+    margin-top: 5.5rem;
+}
+    
+.bottom-image {
+    grid-column: 1;
+    grid-row: 2;
+    width:70%;
+    height:auto;
+
+}
+
+
+/* Top of card */
+.top-text {
+display:flex;
+flex-direction: column;
+
+} 
+
+
+.h2-top {
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.checklist {
+
+    
+ul {
+    list-style: none;
+    padding: 0
+    
+}
+
+}
+
+.checklist {
+
+    li {
+        background-image: url("/Images/Card 4/bx-check-circle.svg");
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        padding-left: 2rem; 
+        line-height: 3rem; 
+        
+    }
+}
+
+/* Styling Learn more-button */
+
+.learn-more {
+    
+        display: flex;
+        align-items: center;
+        padding: 0.7rem 2rem;
+        margin: 1rem 2rem; 
+        background-color: #6c63ff;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: 0 3px 6px 0 #242157a1;
+        width:10rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        font-weight: 600;
+
+        
+
+    }
+
+    .learn-more:hover {
+        box-shadow: 0 3px 6px 0 #090916a1; 
+        transition: 0.2s; 
+    }
+    
+    .learn-more img{
+        max-width: 1rem;
+        height: auto;
+        margin-left: 0.5rem;
+       
+}
+
+
+/* Bottom of card */
+
+.bottom-text {
+
+    display: grid;
+    grid-template-row: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    
+
+}
+
+.h2-bottom {
+    grid-row:1;
+    grid-column:1/ span 2;
+    margin-bottom:1rem;   
+    font-weight: 800;
+}
+
+
+.creditcard {
+    grid-row:2;
+    grid-column:1;
+    margin-top:0;
+    margin-bottom:0;
+
+}
+
+.wallet2 {
+    grid-row:2;
+    grid-column:2;
+    margin-top:0;
+    margin-bottom:0;
+   
+}
+
+.text1 {
+    grid-row:3;
+    grid-column:1;
+    width:85%;
+
+}
+
+.text2  {
+    grid-row:3;
+    grid-column:2;
+    width:85%
+
+}
+
+.learn-more2 {
+    grid-row:4;
+    grid-column:1;
+    margin:2rem 0rem 0rem 0rem;
+    
+}

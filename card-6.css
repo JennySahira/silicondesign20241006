@@ -2,93 +2,106 @@
     background-color: #FFF;
 }
 
+
+/* Styling */
+
+.faq {
+    font-size:0.875rem;
+}
+
+.btn-faq {
+    font-size: 1rem;
+}
+
+.questions {
+    font-size: 2rem;
+    font-weight: 800;
+}
+/* grid card 6 */
 .card6 {
     padding: 2rem;
     margin: auto;
     max-width: 100%;
     max-width: 1200px;
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap:1rem;
 
 }
 
-.contact-text {
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-height:auto;
-width:100%;
-max-width: auto;
-margin-left:2rem;
-
-
-}
-
-.questions {
-    grid-column: 1;
-    grid-row: 1; 
-    margin-top: 7rem;
-}
-
-.get-in-touch {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.help-desk1, .help-desk2 {
-    grid-column: 1;
-    grid-row: 3;
-    position: relative;
-    top:-70%;
-
-}
-
-.help-desk2 {
-    margin: 0 0 0 17rem;
-    
-    
-
-}
-
-/* Grid Contact us */
-.contact-phone, .contact-chat {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:1fr 1fr 1fr ;
-    border: solid 0.5px;
-    border-color: #E2E5F1;
-    border-radius: 5%;
-    width: 14rem;
-    height:11rem;
-    padding: 1.5rem;
-
-}
-
-.phone, .chat {
+.contact-text{
     grid-column: 1;
     grid-row: 1;
+    width:80%;
+    height: auto;
+    position:relative;
+    top:10%;
+    left:-16%;
+
 }
 
+    .accordion {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 3.5rem;
+    }
+   
+    .subscribe {
+        grid-column: 1 /span 2;
+        grid-row: 2;
+        
+    }
+    /*Contact-text flex */
+
+    .contact-text {
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+    
+    
+    .get-in-touch {
+        margin-top: 1.5rem;
+    }
+    
+    .help-desk {
+        display:flex;
+       flex-direction:row ;
+       gap:2rem;
+       margin-top:1rem;
+    }
+
+    
+
+.contact-phone, .contact-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: solid 0.5px #E2E5F1;
+    border-radius: 5%;
+    width: 14rem;
+    height: 11rem;
+    padding: 1.5rem;
+}
+
+
+
 .questions-1, .questions-2 {
-    grid-column: 1;
-    grid-row:2;
-    padding-top:0.5rem;
+    padding-top: 0.5rem;
 }
 
 .blue-contact, .green-contact {
-    grid-column:1;
-    grid-row:3;
-
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .blue-arrow, .green-arrow {
-    grid-column: 1;
-    grid-row:3;
-    margin: 0.3rem 0 0 6rem;
-
+    margin-left: 1rem;
+    margin-bottom: 0.2rem;
 }
-
 
 /* Btn-contact */
 .btn-contact {
@@ -96,7 +109,6 @@ margin-left:2rem;
     background-color: inherit;
     font-size: 16px;
     cursor: pointer;
-    display: inline-block;
     width:auto;
     height:auto;
     font-size:0.875;
@@ -105,10 +117,13 @@ margin-left:2rem;
     align-items:center;
     font-weight: 600;
     padding-bottom:1rem;
-    
+       
 
 }
 
+.btn-contact:hover{
+    text-decoration: underline;
+}
 
 .green-arrow, .blue-arrow {
     width: 16px;
@@ -126,6 +141,11 @@ margin-left:2rem;
 } 
 
 /* Accordion FAQ skapad med hjölp av google*/
+.myaccordion {
+    box-shadow: 0 1px 2px 1px #E2E5F1;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}      
 
 .btn-faq {
     background-color: inherit;
@@ -138,13 +158,15 @@ margin-left:2rem;
     outline:none;
     transition: 0.4s;
     font-weight: 600;
-    box-shadow: 2px 0 0 2px #E2E5F1;
-    border:none;
     
+    align-items: center;
+    justify-content: center;
+    transition:0.4s;
+    justify-content: space-between;
+    display:flex;
+    position:relative;
 
 }
-
-
 
 .btn-faq:after {
     content: url("/Images/Card 6/arrow-accordion.svg");
@@ -155,5 +177,113 @@ margin-left:2rem;
 
 .active:after {
     content: url("/Images/Card 6/arrow-up.svg");
+    
 
+}
+
+.faq {
+    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.faq-content {
+    padding: 18px;
+    line-height: 1.5rem;
+
+}
+
+
+p {
+    margin:0;
+    line-height: 1.5rem;
+}
+
+
+
+/* Subscribe form skapad med hjälp av google */
+
+.subscribe {
+    background-color: #F3F6FF; 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 2rem;
+    width: auto;
+    height: 30%;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}    
+
+.input-wrapper {
+    display: flex;
+    align-items: center; 
+    position: relative; 
+}
+
+.email-icon {
+    position: absolute; /* Absolut positionering för att placera ikonen i input-fältet */
+    left: 10px; /* Justera avståndet från vänster */
+    top: 50%; /* Centrera vertikalt */
+    transform: translateY(-50%); /* Justera för att centrera helt */
+    width: 20px;
+    height: 20px;
+    pointer-events: none; /* Se till att ikonen inte blockerar input-fältet */
+}
+
+input[type="text"] {
+    padding-left: 35px; /* Utrymme för ikonen i textfältet */
+    height: 40px;
+    font-size: 16px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    box-shadow: 0 1px 2px 1px #E2E5F1;
+    width: 20rem;
+}
+    
+
+input[type="text"]::placeholder {
+    color:#B4B7C9;
+
+
+}
+
+input[type="submit"] {
+    height: 40px;
+    font-size: 16px;
+    background-color: #6366F1;
+    color: #fff;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    box-shadow: 0 1px 2px 1px #E2E5F1;
+    width: 8rem; /* Bredd på knappen */
+    cursor: pointer;
+}
+    
+input[type="text"]:focus, 
+input[type="submit"]:focus {
+    outline:none;
+}
+
+.copywright {
+    text-align: center;
+    text-size: 0.875rem;
+    color:#9397AD;
+    margin-bottom:4rem;
 }

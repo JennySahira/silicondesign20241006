@@ -1,5 +1,5 @@
 .card5-background {
-    background-color: #F3F6FF;
+    background-color: var(--gray-100);
 }
 
 .card-5 {
@@ -17,38 +17,29 @@
 }
 
 /* Styling */
+
 .client-review {
-    font-weight:800 ;
-    width:auto;
-    position: relative;
-    left:-7%;
-    margin-top:-20px;
-    z-index: 1;
-   
+    color:var(--gray-900);
+    font-weight:800;
+    font-size: 2.5rem;
+    white-space:nowrap;
     
-
-}
-
-.yellow-star, .hollow-star {
-    width:9%;
-}
-
-
-.client-review {
-    color:#0B0F19;
-
 }
 .name {
     font-weight: 700;
-    color:#0B0F19;
+    color:var(--gray-900);
+    font-size:1rem;
 }
 .title {
-    color:#9397AD;
+    color:var(--gray-600);
     font-size: 0.875rem;
+    font-weight: 400;
 }
 
 .review {
     font-size: 1.125rem;
+    color:var(--gray-700);
+    font-weight: 400;
 }
 
 
@@ -118,4 +109,18 @@
     grid-row:4;
     grid-column: 1;
     margin: 1.8rem 3rem 0 5em;
+}
+
+.yellow-star, .hollow-star {
+    width:9%;
+}
+
+.client-review {
+    font-weight:800 ;
+    width:auto;
+    position: relative;
+    left:-7%;
+    margin-top:-20px;
+    z-index: 1;
+   
 }

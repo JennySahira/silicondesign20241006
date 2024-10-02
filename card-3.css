@@ -1,7 +1,12 @@
 .card3-background {
-    background:#F3F6FF;
+    background:var(--gray-100);
 }
 
+.transfer-text p {
+    color:var(--gray-700);
+    font-size:1rem;
+    font-weight: 400;
+}
 
 .card-3 {
     padding: 2rem;
@@ -26,7 +31,13 @@
 .carousel-container   {
     grid-column: 2;
     grid-row: 2;
+    
+}
 
+.carousel-btn {
+    grid-column:2;
+    grid-row: 2;
+    
 }
 
 .transfer-text {
@@ -46,6 +57,9 @@
     max-width: 37rem; /* Maxbredd för karusellen */
     margin: auto;
     overflow: hidden;
+    display:flex;
+    flex-direction: row;
+
 }
 
 .carousel-images img {
@@ -60,8 +74,8 @@
 button.prev, button.next {
     top: 50%;
     transform: translateY(-50%);
-    background-color: #7e0505fa;
-    color: rgb(0, 0, 0);
+    background-color: #fffffffa;
+    color: var(-gray-900);
     border: none;
     padding: 1rem;
     cursor: pointer;
@@ -70,12 +84,15 @@ button.prev, button.next {
     display:block !important;
 }
 
-button.prev {
-    left: -50px;
-}
+.prev {
+    grid-row:2;
+    margin-right: 20rem;
 
-button.next {
-    right:-50px;
+
+}
+.next  {
+    grid-row:2;
+    margin-left:20rem;
 }
 
 

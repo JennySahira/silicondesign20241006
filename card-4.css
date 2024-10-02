@@ -1,5 +1,5 @@
 .card4-background {
-    background-color:#FFF;
+    background-color:white;
 
 }
 
@@ -13,6 +13,26 @@
     grid-template-columns: 2;
     grid-template-rows: 2;
 
+}
+
+/* Styling */
+
+.card-4 h2 {
+    font-size:2rem;
+    color:var(--gray-900);
+    font-weight: 800;
+}
+
+.li {
+    font-size: 1rem;
+    color:var(--gray-700);
+    font-weight:400;
+}
+
+p {
+    font-size: 1rem;
+    color:var(--gray-700);
+    font-weight:400; 
 }
 
 /* Grid card 4 */
@@ -50,13 +70,15 @@
 .top-text {
 display:flex;
 flex-direction: column;
+width:25rem;
 
 } 
 
 
 .h2-top {
     margin-bottom: 2rem;
-    font-weight: 800;
+    
+    
 }
 
 .checklist {
@@ -90,7 +112,7 @@ ul {
         align-items: center;
         padding: 0.7rem 2rem;
         margin: 1rem 2rem; 
-        background-color: #6c63ff;
+        background-color: var(--primary-blue);
         color: #fff;
         border: none;
         border-radius: 0.5rem;

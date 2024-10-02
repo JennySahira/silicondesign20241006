@@ -1,22 +1,84 @@
 .card6-background {
-    background-color: #FFF;
+    background-color: white;
 }
-
 
 /* Styling */
 
 .faq {
     font-size:0.875rem;
+    color:var(--gray-700);
+    font-weight: 400;
 }
 
 .btn-faq {
     font-size: 1rem;
+    color:var(--gray-900);
+    font-weight: 600;
+    background-color: white;
+    
 }
 
 .questions {
     font-size: 2rem;
     font-weight: 800;
+    color:var(--gray-900);
 }
+
+.get-in-touch {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color:var(--gray-700);
+}
+
+.questions-1, .questions.2  {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color:var(--gray-700);
+
+}
+
+.blue-contact {
+    color:#6366F1;
+    font-weight:600;
+    font-size: 0.875rem;
+}
+
+.green-contact{
+    color:#22C55E;
+    font-weight:600;
+    font-size: 0.875rem;
+}
+
+
+.subscribe-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:var(--gray-900);
+}
+
+input[type="text"]::placeholder {
+    color:var(--gray-500);
+    font-size:1rem;
+    font-weight:400 ;
+
+}
+
+
+input[type="submit"] {
+    height: 40px;
+    font-size: 1rem;
+    background-color:var(--primary-blue);
+    color: white;
+    font-weight: 600;
+}
+
+.copywright {
+    text-align: center;
+    font-size: 0.875rem;
+    color:#9397AD;
+    margin-bottom:1rem;
+}
+
 /* grid card 6 */
 .card6 {
     padding: 2rem;
@@ -50,6 +112,14 @@
     .subscribe {
         grid-column: 1 /span 2;
         grid-row: 2;
+        
+    }
+
+    .copywright {
+        grid-column: 1/ span 2;
+        grid-row:2;
+        margin-top:18rem;
+        margin-right:10rem;
         
     }
     /*Contact-text flex */
@@ -132,13 +202,7 @@
     margin-bottom:0.2rem;
 }
 
-.blue-contact {
-    color:#6366F1
-}
-
-.green-contact{
-    color:#22C55E;
-} 
+ 
 
 /* Accordion FAQ skapad med hjölp av google*/
 .myaccordion {
@@ -148,8 +212,6 @@
 }      
 
 .btn-faq {
-    background-color: inherit;
-    color:#0B0F19;
     cursor:pointer;
     padding:1rem;
     width:100%;
@@ -157,8 +219,6 @@
     border:none;
     outline:none;
     transition: 0.4s;
-    font-weight: 600;
-    
     align-items: center;
     justify-content: center;
     transition:0.4s;
@@ -226,7 +286,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 0;
-}    
+}  
 
 .input-wrapper {
     display: flex;
@@ -235,19 +295,19 @@ p {
 }
 
 .email-icon {
-    position: absolute; /* Absolut positionering för att placera ikonen i input-fältet */
-    left: 10px; /* Justera avståndet från vänster */
-    top: 50%; /* Centrera vertikalt */
-    transform: translateY(-50%); /* Justera för att centrera helt */
+    position: absolute; 
+    left: 10px;
+    top: 50%; 
+    transform: translateY(-50%); 
     width: 20px;
     height: 20px;
-    pointer-events: none; /* Se till att ikonen inte blockerar input-fältet */
+    pointer-events: none;
 }
 
 input[type="text"] {
-    padding-left: 35px; /* Utrymme för ikonen i textfältet */
-    height: 40px;
-    font-size: 16px;
+    padding-left: 35px;
+    height: 30px;
+    font-size: 1rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
@@ -263,16 +323,13 @@ input[type="text"]::placeholder {
 }
 
 input[type="submit"] {
-    height: 40px;
-    font-size: 16px;
-    background-color: #6366F1;
-    color: #fff;
+
     border-left: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
     box-shadow: 0 1px 2px 1px #E2E5F1;
-    width: 8rem; /* Bredd på knappen */
+    width: 8rem; 
     cursor: pointer;
 }
     
@@ -281,9 +338,3 @@ input[type="submit"]:focus {
     outline:none;
 }
 
-.copywright {
-    text-align: center;
-    text-size: 0.875rem;
-    color:#9397AD;
-    margin-bottom:4rem;
-}

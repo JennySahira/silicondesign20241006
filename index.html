@@ -32,7 +32,7 @@
                 </nav>
             </div>
             <div class="right-section">
-                <a class="dark-mode">Dark Mode</a>
+                <a class="dark-mode-text">Dark Mode</a>
                 <label class="switch">
                     <input type="checkbox" id="dark-mode">
                     <span class="slider round"></span>
@@ -45,7 +45,7 @@
         </div>
 
 
-
+    
     <section class="hero"> 
             <div class="hero-text">
                 <h1>Manage All Your Money in One App</h1>
@@ -60,10 +60,10 @@
                     </button>    
                 </div>
                 <div class="container">
-                    <section class="arrow-button">
-                        <i class="arrow-down"></i>
-                    </section>
-                        <p>Discover more</p>
+                    <a href="#target-section" class="arrow-button">
+                        <span class="arrow-down"></span>
+                    </a>
+                        <p class="discover-more">Discover more</p>
                 </div>
             </div>
             
@@ -73,6 +73,7 @@
     </section>
 </div>
   </div>
+
 
 
 <!-- Card 2 -->
@@ -85,12 +86,13 @@
             <img src="/Images/Card 2/logo3.svg" alt="logoipsum">
             <img src="/Images/Card 2/logo4.svg" alt="logoipsum">
             <img src="/Images/Card 2/logo5.svg" alt="logoipsum">
-            <img src="/Images/Card 2/logo5.svg" alt="logoipsum">
+            <img src="/Images/Card 2/logo5.svg" class="image-shadow" alt="logoipsum">
         </div>
 
 
         <!-- App features-->
-    <div class="hero2"> 
+        <section id="target-section">
+        <div class="hero2"> 
          <div class="hero-image2">
             <img src="Images/Card 2/iphone.svg" alt="iphone">
         </div>
@@ -103,7 +105,7 @@
          
     
     <div class="usp-1">
-         <div class="usp-2">
+         <div class=" usp usp-2">
             <div class=usp-item1>
                     <h2>Easy Payments</h2>
                         <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
@@ -125,7 +127,7 @@
                         <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
             </div>
                      <div class=usp-item6>              
-                    <h2>Top Standars</h2>
+                    <h2>Top Standards</h2>
                         <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>       
                     </div>                
                 
@@ -141,8 +143,9 @@
     </div>
     </div>
     </div>
-    </div>   
-
+    </div> 
+ </div>  
+</section>
 
 <!-- Card 3 -->
 <div class="card3-background">
@@ -155,10 +158,10 @@
             <img src="/Images/Card 3/iPhone-2.svg" alt="Iphone displaying transfers">
             <img src="/Images/Card 3/Iphone-3.svg" alt="Ihpone showing budget">
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
       </div>  
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
 
 <div class="transfer-text">
         <h4>Latest transaction history</h4>
@@ -337,11 +340,13 @@
                 </div>
             </form>
         </div>
-    </div>
+    <footer class="copywright">© 2024 Silicon. All rights reserved. Credit MadrasThemes</footer>
+</div>
 </div>
 
-<footer><p class="copywright">© 2024 Silicon. All rights reserved. Credit MadrasThemes</p></footer>
-<script src="/carousel.js"></script><script src="/accordion.js"></script>
+
+
+<script src="/carousel.js"></script><script src="/accordion.js"></script><script src="darkmode.js"></script>
     </body>
 
 </html>

@@ -7,11 +7,12 @@
 .card-4 {
     padding: 2rem;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     max-width: 1200px;
     display:grid;
     grid-template-columns: 2;
     grid-template-rows: 2;
+    margin-left: 5rem;
 
 }
 
@@ -122,6 +123,7 @@ ul {
         font-size: 0.8rem;
         line-height: 1.5;
         font-weight: 600;
+        transition: 0.2s; 
 
         
 

@@ -1,26 +1,25 @@
 /* Media queries */
-@media (min-width: 1000px) {
+@media (min-width: 769px) {
     .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
         max-width: 1200px; /* Begränsar bredden på stora skärmar */
-    }
-}
-
-@media (max-width: 1000px) {
-    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
-        width: 95%; /* Anpassar bredden på mindre skärmar */
         margin: 0 auto;
     }
+}
+
+@media (max-width: 768px) {
+
+    .card-1, .card-2, .card-3, .card-4, .card-5, .card-6{
+        transform: scale(0.7); /* Skalar ned till 70% av ursprunglig storlek */
+        transform-origin: top left; /* Justerar transformens ursprung */
+        width: 132.86%; /* Öka bredden för att kompensera för skalan */ /* Öka bredden för att kompensera för skalan */
+        margin-left:5rem;
+    }
     .hero-image {
         max-width: 100%; /* Se till att bilden inte sträcker sig utanför fönstret */
+        height:auto;
     }
 }
 
-@media (max-width: 600px) {
-    .hero {
-        padding: 50px 10px;
-        grid-template-columns: 1fr; /* Gör layouten vertikal på små skärmar */
-    }
-    .hero-image {
-        max-width: 100%; /* Se till att bilden inte sträcker sig utanför fönstret */
-    }
+.header, .footer {
+    padding: 15px;
 }

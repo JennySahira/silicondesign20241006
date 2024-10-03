@@ -28,8 +28,7 @@
     width: 100%;
     height: auto;
     max-width: 1200px;
-    
-
+    margin-left: 3rem;
 }
 
 .btn-1 {
@@ -61,8 +60,14 @@ input:focus + .slider {
 
 .discover-more {
     font-size:.875rem !important;
-
+     
 }
+
+.arrow-button:hover{
+box-shadow: 0 2px 4px 0 #090916a1;
+    transition: 0.2s; 
+}
+
 /* Topbar */
 
     .topbar {
@@ -70,6 +75,7 @@ input:focus + .slider {
         align-items: center;
         justify-content: space-between;
         padding: 0.625rem 2.25rem;
+        margin-left: 5rem;
         
     }
 
@@ -208,6 +214,7 @@ input:checked + .slider:before {
     height:auto;
     position: relative;
     margin-top:3rem;
+    margin-left: 5rem;
     
     
  
@@ -267,8 +274,8 @@ input:checked + .slider:before {
   
   .download-buttons .btn-appstore,
   .download-buttons .btn-playstore {
-    border:none
-  
+    border:none;
+    background:transparent;
   }
   
    /* Bild i hero section layout */
@@ -286,7 +293,9 @@ input:checked + .slider:before {
   }
 
  
-
+.btn-appstore, .btn-playstore {
+    cursor: pointer;
+}
   
     /* Discover more */
   
@@ -318,7 +327,7 @@ input:checked + .slider:before {
     }
   
     .arrow-button:hover {
-        background-color: rgb(240, 240, 240);
+        transition: 0.2s; 
     }
   
     /* Nedåt pil skapad med hjälp av google */

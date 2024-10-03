@@ -12,10 +12,11 @@
 .card-2 {
     padding: 2rem;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     max-width: 1200px;
-
+    margin-left: 5rem;
+    margin-right:3rem;
 
 }
 
@@ -60,6 +61,7 @@
    height: auto;
    object-fit: contain; 
    margin: 5rem 0 0 16rem;
+   padding-left:3rem;
 
 }
 
@@ -72,6 +74,13 @@
 
 .image-shadow {
   box-shadow:0 1px 3px 1px #ebebeec5;
+  
+}
+
+.logo-image {
+  border:solid 1px;
+  border-radius: 5px;
+  border-color: #E2E5F1;
 }
     /* hero  */
     
@@ -89,7 +98,7 @@ margin-top: 5rem;
     grid-row: 1/ 6 ;
     padding-top: 3rem;
     position:relative;
-    left:-20%;
+    left:-15%;
 
 }
 

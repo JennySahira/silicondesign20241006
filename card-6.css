@@ -83,12 +83,13 @@ input[type="submit"] {
 .card6 {
     padding: 2rem;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     max-width: 1200px;
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
     gap:1rem;
+    margin:0 auto;
 
 }
 
@@ -99,7 +100,7 @@ input[type="submit"] {
     height: auto;
     position:relative;
     top:10%;
-    left:-16%;
+    left:-12%;
 
 }
 
@@ -112,6 +113,7 @@ input[type="submit"] {
     .subscribe {
         grid-column: 1 /span 2;
         grid-row: 2;
+        align-items: centre;
         
     }
 
@@ -119,7 +121,7 @@ input[type="submit"] {
         grid-column: 1/ span 2;
         grid-row:2;
         margin-top:18rem;
-        margin-right:10rem;
+        margin-right:5rem;
         
     }
     /*Contact-text flex */
@@ -193,6 +195,7 @@ input[type="submit"] {
 
 .btn-contact:hover{
     text-decoration: underline;
+    transition: 0.2s;
 }
 
 .green-arrow, .blue-arrow {
@@ -209,6 +212,7 @@ input[type="submit"] {
     box-shadow: 0 1px 2px 1px #E2E5F1;
     margin-bottom: 1rem;
     border-radius: 10px;
+    
 }      
 
 .btn-faq {
@@ -232,6 +236,7 @@ input[type="submit"] {
     content: url("/Images/Card 6/arrow-accordion.svg");
     float: right;
     margin-left: 0.4rem;
+
 
 }
 
@@ -279,6 +284,7 @@ p {
     gap: 2rem;
     justify-content: center;
     margin-top: 5rem;
+    margin-right:5rem;
 }
 
 .subscribe-form {
@@ -306,13 +312,14 @@ p {
 
 input[type="text"] {
     padding-left: 35px;
-    height: 30px;
-    font-size: 1rem;
+    height: 40px;
+    font-size: 0.875rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
     box-shadow: 0 1px 2px 1px #E2E5F1;
-    width: 20rem;
+    width: 18rem;
+    font-weight: 200;
 }
     
 
@@ -329,12 +336,15 @@ input[type="submit"] {
     border-bottom-right-radius: 10px;
     border: none;
     box-shadow: 0 1px 2px 1px #E2E5F1;
-    width: 8rem; 
+    width: 6rem; 
     cursor: pointer;
+    font-size: 0.875rem;
+    height:40px;
+    font-weight: 200;
+    
 }
     
 input[type="text"]:focus, 
 input[type="submit"]:focus {
     outline:none;
 }
-

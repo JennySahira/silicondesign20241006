@@ -1,0 +1,106 @@
+.card3-background {
+    background:var(--gray-100);
+}
+
+.transfer-text p {
+    color:var(--gray-700);
+    font-size:1rem;
+    font-weight: 400;
+}
+
+.card-3 {
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.rubrik {
+    grid-column:2;
+    grid-row: 1;
+    width: 100;
+    max width: none;
+    text-align: center;
+}
+
+.carousel-container   {
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+
+.carousel-btn {
+    grid-column:2;
+    grid-row: 2;
+    transition: 0.2s; 
+    
+}
+
+.carousel-btn:hover {
+    box-shadow: 0 2px 4px 0 #090916a1;
+    transition: 0.2s; 
+}
+
+.transfer-text {
+    grid-column: 1 /span 3;
+    grid-row: 3;
+    width: 100%
+    max-width: none;
+    text-align:center;
+
+}
+
+
+/* Carousel skapad med hjälp av chatgpt - se javascript*/
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 37rem; /* Maxbredd för karusellen */
+    margin: auto;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; 
+}
+
+.carousel-images img.active {
+    display: block; 
+}
+
+button.prev, button.next {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fffffffa;
+    color: var(-gray-900);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+    display:block !important;
+}
+
+.prev {
+    grid-row:2;
+    margin-right: 20rem;
+
+
+}
+.next  {
+    grid-row:2;
+    margin-left:20rem;
+}
+
+
